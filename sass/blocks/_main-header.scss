@@ -1,0 +1,27 @@
+.main-header{
+  position: relative;
+  max-width: 260px;
+  padding: 34px 30px 3px;
+  margin: 0 auto;
+  @media (min-width: 500px) {
+    max-width: 500px;
+  }
+  @media (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.main-header__header{
+  margin-bottom: 27px;
+	font-size: $fsz-title;
+	line-height: $l-height;
+  text-align: $align-center;
+  @media (min-width: 768px) {
+    font-size: $f-size;
+  }
+}
+.main-header__desc{
+  line-height: $l-height;
+  text-align: $align-center;
+  color: $base-color;
+}

@@ -1,0 +1,109 @@
+.main-nav{
+  position: relative;
+}
+.main-nav__items{
+  position: relative;
+  margin-bottom: 56px;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+}
+.main-nav__item{
+  text-align: center;
+  background-color: $bg-color;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+  &:first-child{
+    border-top: 0;
+  }
+  &:nth-child(4){
+    border-bottom: 0;
+    box-shadow: inset 0px -5px 10px -5px rgba(0, 0, 0, 0.4);
+    @media (min-width: 768px) {
+      box-shadow: none;
+    }
+  }
+  @media (min-width: 768px) {
+    width: 20%;
+    background-color: transparent;
+    border: 0;
+    &:nth-child(2){
+      margin-right: 150px;
+    }
+  }
+}
+.main-nav__item-link{
+  position: relative;
+  display: block;
+  padding: 7px 0;
+  font-size: $fsz-title;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  @media (min-width: 768px) {
+    font-size: inherit;
+    line-height: 26px;
+    color: inherit;
+  }
+}
+.main-nav__logo{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.main-nav__toggle{
+  position: absolute;
+  width: 23px;
+  height: 20px;
+  right: 20px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  // Icon burger open
+  // &--open{
+  //   bottom: -35px;
+  //   span{
+  //     position: absolute;
+  //     width: 23px;
+  //     height: 4px;
+  //     top: 0;
+  //     right: 0;
+  //     font-size: 0;
+  //     background-color: $bg-color;
+  //     border: none;
+  //     &:nth-child(2){
+  //       top: 8px;
+  //       height: 3px;
+  //       border-top: 1px solid #c0d9e8;
+  //       border-bottom: 1px solid #c0d9e8;
+  //     }
+  //     &:nth-child(3){
+  //       top: 17px;
+  //     }
+  //   }
+  // }
+  &--close{
+    top: 20px;
+    span{
+      position: absolute;
+      width: 23px;
+      height: 4px;
+      top: 7px;
+      right: 0;
+      font-size: 0;
+      background-color: #ffffff;
+      border: none;
+      transform: rotate(45deg);
+      &:nth-child(2){
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

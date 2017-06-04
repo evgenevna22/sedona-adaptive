@@ -1,0 +1,35 @@
+.offer{
+  @include flex-column;
+  max-width: 460px;
+	padding: 36px 20px 49px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    padding: 36px 20px 60px;
+  }
+  @media (min-width: 1280px){
+    padding: 55px 20px 70px;
+  }
+}
+.offer__title{
+  margin-bottom: 22px;
+  font-size: $f-size;
+  line-height: $l-height;
+  text-align: $align-center;
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+    font-size: $offer-title;
+  }
+}
+.offer__desc{
+  margin-bottom: 28px;
+  line-height: 24px;
+  text-align: $align-center;
+  line-height: $l-height;
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+.offer__btn{  
+  margin: 0 auto;
+  padding: 17px 0 18px;
+}

@@ -1,0 +1,8 @@
+.body-wrapper{
+  @media (min-width: 1280px){
+    margin: 0 40px;
+    background-color: #ffffff;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, .2), 
+                -5px 0px 15px rgba(0, 0, 0, .2); 
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy — Sedona</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav--close">
+            <span class="main-nav__toggle-icon">
+              Закрыть меню
+            </span>
+          </button>
+          <ul class="main-nav__items main-nav__items--no-js main-nav__items--closed">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__item-link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="gallery.html" class="main-nav__item-link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__item-link">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__item-link">HTML academy</a>
+            </li>
+            <li class="main-nav__logo">
+              <a href="index.html" class="main-nav__logo-link">
+                <picture>
+                  <img src="" alt="Sedona">
+                </picture>
+              </a>
+            </li>
+          <li class="main-nav__button">
+              <button class="main-nav__toggle main-nav--open">
+                <span class="main-nav__toggle-icon">
+                  Открыть меню
+                </span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__intro">
+        </div>
+      </header>
+      <main class="page-main">
+        <section class="main-header container">
+          <h1 class="main-header__header">Оставьте свой отзыв</h1>
+          <p class="main-header__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+        <form action="review-form.html" id="form-review" class="review-form">
+          <fieldset class="review-form__item">
+            <div class="review-form__header">
+              <h2 class="review-form__title">Представьтесь:</h2>
+            </div>
+            <div class="review-form__group review-form__group--username">
+              <label for="name" class="review-form__label">Имя*:</label>
+              <input type="text" id="name" name="username" class="review-form__text" value="name" placeholder="Петр"><br>
+              <label for="surname" class="review-form__label">Фамилия*:</label>
+              <input type="text" id="surname" name="username" class="review-form__text" value="surname" placeholder="Иванов"><br>
+              <label for="patronymic" class="review-form__label">Отчество:</label>
+              <input type="text" id="patronymic" name="username" class="review-form__text" value="patronymic" placeholder="Александрович">
+            </div>
+          </fieldset>
+          <fieldset class="review-form__item">
+            <div class="review-form__header">
+              <h2 class="review-form__title">Контактная информация:</h2>
+            </div>
+            <div class="review-form__group review-form__group--contacts">
+              <label for="phone" class="review-form__label">Контактный телефон*:</label><br>
+              <input type="text" id="phone" name="userdata" class="review-form__text" value="phone" placeholder="Введите телефон">
+              <span class="review-form__icon">
+                <img src="" alt="" class="review-form__img">
+              </span>
+              <p class="review-form__error">Ошибка, перепроверьте номер</p>
+              <label for="email" class="review-form__label">Электронная почта*:</label><br>
+              <input type="text" id="email" name="userdata" class="review-form__text" value="email" placeholder="Введите e-mail">
+              <span class="review-form__icon">
+                <img src="" alt="" class="review-form__img">
+              </span>
+            </div>
+          </fieldset>
+          <fieldset class="review-form__item">
+            <div class="review-form__header">
+              <h2 class="review-form__title">Ваше общее впечатление:</h2>
+            </div>
+            <div class="review-form__group review-form__group--impression">
+              <input type="radio" id="good" class="review-form__input" name="impression" value="good" checked>
+              <label for="good" class="review-form__label review-form__radio">Скорее положительное</label><br>
+              <input type="radio" id="bad" class="review-form__input" name="impression" value="bad">
+              <label for="bad" class="review-form__label review-form__radio">Скорее отрицательное</label><br>
+              <input type="radio" id="idk" class="review-form__input" name="impression" value="idk">
+              <label for="idk" class="review-form__label review-form__radio">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
+          <fieldset class="review-form__item">
+            <div class="review-form__header">
+              <h2 class="review-form__title">Посещенные достопримечательности:</h2>
+            </div>
+            <div class="review-form__group review-form__group--affraction">
+              <input type="checkbox" id="bridge" class="review-form__input" name="affraction" value="bridge" checked>
+              <label for="bridge" class="review-form__label review-form__checkbox">Мост Дьявола</label><br>
+              <input type="checkbox" id="park" class="review-form__input" name="affraction" value="bad" checked>
+              <label for="park" class="review-form__label review-form__checkbox">Слайд-парк</label><br>
+              <input type="checkbox" id="mointain" class="review-form__input" name="affraction" value="idk">
+              <label for="mountain" class="review-form__label review-form__checkbox">Гора-Колокол</label><br>
+              <input type="checkbox" id="cliffs" class="review-form__input" name="affraction" value="idk" checked>
+              <label for="cliffs" class="review-form__label review-form__checkbox">Красные скалы</label>
+            </div>
+          </fieldset>
+          <fieldset class="review-form__item">
+            <div class="review-form__header">
+              <h2 class="review-form__title">Опишите свои эмоции:</h2>
+            </div>
+            <textarea name="suggestion" id="suggestion" cols="40" rows="10" placeholder="Опишите подробно все свои восторги" class="review-form__add-text"></textarea>
+          </fieldset>
+          <button class="review-form__btn btn" form="form-review">Отправить отзыв</button>
+          <span class="review-form__note">
+            * — обязательные поля
+          </span>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <section class="page-footer__contacts">
+          <h3 class="page-footer__header">#VISITSEDONA</h3>
+        </section>
+        <div class="page-footer__social">
+          <ul class="social">
+            <li class="social__link">
+              <a href="https://www.twitter.com"></a>
+            </li>
+            <li class="social__link">
+              <a href="https://www.facebook.com"></a>
+            </li>
+            <li class="social__link">
+              <a href="https://www.youtube.com"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <a href="https://htmlacademy.ru" class="page-footer__copyright-link">Разработано</a>
+          <a href="https://htmlacademy.ru" class="page-footer__copyright-item"></a>
+        </div>
+      </footer>
+      <div class="page-modal page-modal--failure">
+        <h3 class="page-modal__header">Что-то пошло не так!</h3>
+        <p class="page-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="page-modal__btn btn">ОК</button>
+      </div>
+      <div class="page-modal page-modal--succes">
+        <h3 class="page-modal__header">Ваш отзыв отправлен!</h3>
+        <p class="page-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="page-modal--succes-btn">
+          <button class="page-modal__btn btn">Закрыть окно</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
